@@ -17,7 +17,7 @@ spec:
       serviceAccountName: {{ include "hello-kubernetes.name" . }}
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.deployment.container.image.repository }}:{{ .Values.deployment.container.image.tag | default .Chart.AppVersion }}"
+          image: "{{ .Values.deployment.container.image.repository }}:{{ .Values.deployment.container.image.tag  }}"
           imagePullPolicy: {{ .Values.deployment.container.image.pullPolicy }}
           ports:
             - name: http
