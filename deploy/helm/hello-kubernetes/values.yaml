@@ -15,8 +15,8 @@ deployment:
   replicaCount: 2
   container:
     image:
-      repository: "us-central1-docker.pkg.dev/friendly-anthem-344020/argo-test-repo/quickstart-image:tag1"
-      tag: "" # uses chart appVersion if not provided
+      repository: "us-central1-docker.pkg.dev/friendly-anthem-344020/argo-test-repo/quickstart-image"
+      tag: "tag1" # uses chart appVersion if not provided
       pullPolicy: IfNotPresent
     port: 8080
 
